@@ -1,0 +1,30 @@
+{
+  "name": "study_32jump_32adventure_32_45_32quiz_32edition",
+  "main": "main.js",
+  "productName": "Study Jump Adventure - Quiz Edition",
+  "description": "Study Jump Adventure - Quiz Edition",
+  "author": "",
+  "version": "1.0.0",
+  "dependencies": {
+    
+    "@electron/remote": "2.1.2"
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "32.3.3",
+    "electron-builder": "26.4.0"
+  },
+  "build": {
+    "appId": "com.example.notavania",
+    "extraFiles": [
+      "LICENSE.GDevelop.txt"
+    ],
+    "directories": {
+      "buildResources": "buildResources"
+    }
+  }
+}
